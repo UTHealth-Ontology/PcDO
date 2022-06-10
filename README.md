@@ -4,9 +4,9 @@ Details coming soon...
 
 Creators and contributors:
 
-Clifford Chen, MD
-Tuan Amith, PhD
-Cui Tao, PhD
+* Clifford Chen, MD
+* Tuan Amith, PhD
+* Cui Tao, PhD
 
 
 
