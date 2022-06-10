@@ -10,7 +10,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:hpv-viso="http://sbmi.uth.edu/ontology/hpv-viso#">
-    <owl:Ontology rdf:about="http://sbmi.uth.edu/ontology/pcdo">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl">
         <owl:versionIRI rdf:resource="http://sbmi.uth.edu/ontology/pcdo/2.0"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <terms:creator>Clifford Chen</terms:creator>
@@ -76,11 +76,30 @@
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#action_in_response_to -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontology/pcdo#action_in_response_to">
+        <owl:inverseOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#need_to_take_action"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Special_instructions"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Reaction"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#acts_by -->
 
     <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontology/pcdo#acts_by">
         <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
         <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Mechanism_of_Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#administered_in -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontology/pcdo#administered_in">
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Route"/>
     </owl:ObjectProperty>
     
 
@@ -208,9 +227,19 @@
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#builds_up_to -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontology/pcdo#builds_up_to">
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Combination"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Reaction"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#can_be_prevented_by -->
 
     <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontology/pcdo#can_be_prevented_by">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#born_from"/>
         <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Adverse_Drug_Reactions"/>
         <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Prevention_Measure"/>
     </owl:ObjectProperty>
@@ -234,6 +263,15 @@
         <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Target"/>
         <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Cause"/>
         <skos:changeNote>change to &quot;drug target effect&quot;</skos:changeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#caution_for -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontology/pcdo#caution_for">
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Special_Population"/>
     </owl:ObjectProperty>
     
 
@@ -266,11 +304,18 @@
     <!-- http://sbmi.uth.edu/ontology/pcdo#delivered_by -->
 
     <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontology/pcdo#delivered_by">
-        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+        <owl:inverseOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#delivered_in_the_form"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Form"/>
         <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Route"/>
-        <skos:changeNote>remove trade name from domain.. maybe use trade name as alternative name
+    </owl:ObjectProperty>
+    
 
-2022- done</skos:changeNote>
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#delivered_in_the_form -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontology/pcdo#delivered_in_the_form">
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Route"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Form"/>
     </owl:ObjectProperty>
     
 
@@ -583,8 +628,8 @@
 
     <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontology/pcdo#need_to_take_action">
         <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Reaction"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Special_instructions"/>
         <rdfs:comment>Reaction-&gt;Action</rdfs:comment>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -713,6 +758,16 @@
         </rdfs:domain>
         <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Age"/>
         <rdfs:comment>Dosage-&gt;Age</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#taken_in_the_form -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontology/pcdo#taken_in_the_form">
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Dosage"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Dosage_Series"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Form"/>
     </owl:ObjectProperty>
     
 
@@ -1715,6 +1770,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Cautionary_Reaction -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Cautionary_Reaction">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Reaction"/>
+    </owl:Class>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#Change_in_Appetite -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Change_in_Appetite">
@@ -2309,6 +2372,12 @@ Dosage-&gt;Dosage</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#administered_in"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Route"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#affects_body_system"/>
                 <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Body_System"/>
             </owl:Restriction>
@@ -2341,12 +2410,6 @@ Dosage-&gt;Dosage</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#contains"/>
                 <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Ingredients"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#delivered_by"/>
-                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Route"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2898,7 +2961,14 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <!-- http://sbmi.uth.edu/ontology/pcdo#Form -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Form"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Form">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#delivered_by"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Route"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -3885,6 +3955,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Overdose_Reaction -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Overdose_Reaction">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Adverse_Drug_Reactions"/>
+    </owl:Class>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#Overdose_instruction -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Overdose_instruction">
@@ -4664,6 +4742,12 @@ Dosage-&gt;Dosage</rdfs:comment>
     <!-- http://sbmi.uth.edu/ontology/pcdo#Route -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Route">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#delivered_in_the_form"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Form"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <skos:altLabel>Method</skos:altLabel>
     </owl:Class>
     
