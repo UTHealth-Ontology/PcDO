@@ -2575,6 +2575,20 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Drug_Overdose_Reaction -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Drug_Overdose_Reaction">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Adverse_Drug_Reactions"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#need_to_take_action"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Overdose_instruction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#Drug_Target -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Drug_Target">
@@ -3952,14 +3966,6 @@ Dosage-&gt;Dosage</rdfs:comment>
     <!-- http://sbmi.uth.edu/ontology/pcdo#Outcome -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
-    
-
-
-    <!-- http://sbmi.uth.edu/ontology/pcdo#Overdose_Reaction -->
-
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Overdose_Reaction">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Adverse_Drug_Reactions"/>
-    </owl:Class>
     
 
 
