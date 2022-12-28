@@ -6870,6 +6870,7 @@ Dosage-&gt;Dosage</rdfs:comment>
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#carbamazepine">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Major"/>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Moderate"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drugs"/>
     </owl:Class>
     
 
@@ -11424,6 +11425,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#phenobarbital">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Moderate"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drugs"/>
     </owl:Class>
     
 
@@ -11473,6 +11475,7 @@ Dosage-&gt;Dosage</rdfs:comment>
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#phenytoin">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Major"/>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Moderate"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drugs"/>
     </owl:Class>
     
 
@@ -13632,6 +13635,14 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drug_Combination">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drugs -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drugs">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
     </owl:Class>
     
 
