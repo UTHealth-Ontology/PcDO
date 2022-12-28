@@ -796,6 +796,15 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#may_result -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#may_result">
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Target"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
