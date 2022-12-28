@@ -13612,6 +13612,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Lowering_Blood_Pressure -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Lowering_Blood_Pressure">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Mechanism_of_Action"/>
+    </owl:Class>
+    
+
+
     <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drug_Combination -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drug_Combination">
