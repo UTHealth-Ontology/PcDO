@@ -13728,6 +13728,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Physical_Instructions -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Physical_Instructions">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Special_instructions"/>
+    </owl:Class>
+    
+
+
     <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Sterioid_Medication_Combination -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Sterioid_Medication_Combination">
