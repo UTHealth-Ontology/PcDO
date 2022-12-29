@@ -31,8 +31,8 @@
     <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#_Lisinopril">
         <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
         <pcdo:acts_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#decrease_chemicals"/>
+        <pcdo:administered_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#oral_syringe"/>
         <pcdo:comes_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#tablet"/>
-        <pcdo:delivered_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#oral_syringe"/>
         <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#people_who_are_pregnant"/>
         <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#people_with_angiodema"/>
         <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#people_with_diabetes"/>

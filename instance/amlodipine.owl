@@ -63,6 +63,7 @@
     <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#amlodipine">
         <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
         <pcdo:acts_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#lowering_blood_pressure"/>
+        <pcdo:administered_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#orally"/>
         <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#misc_drug_amlodipine_combination"/>
         <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#seizure_combination"/>
         <pcdo:comes_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#liquid"/>
@@ -387,6 +388,14 @@
 
     <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#once_a_day">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#orally -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#orally">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Route"/>
     </owl:NamedIndividual>
     
 
