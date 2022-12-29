@@ -13648,6 +13648,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Decrease_Glucose_Amount -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Decrease_Glucose_Amount">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Mechanism_of_Action"/>
+    </owl:Class>
+    
+
+
     <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Diabetes_Medication_Combination -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Diabetes_Medication_Combination">
