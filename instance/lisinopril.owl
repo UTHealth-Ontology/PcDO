@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#"
+     xml:base="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:pcdo="http://sbmi.uth.edu/ontology/pcdo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#_Lisinopril -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#_Lisinopril">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+        <pcdo:acts_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#decrease_chemicals"/>
+        <pcdo:comes_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#tablet"/>
+        <pcdo:delivered_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#oral_syringe"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#people_who_are_pregnant"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#people_with_angiodema"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#people_with_diabetes"/>
+        <pcdo:has_dosage_series rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#once_a_day"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#eat_low_sodium_diet"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#inform_doctor_of_prescriptions_and_supplements"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#take_if_you_forgotten"/>
+        <pcdo:is_safe_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#adults"/>
+        <pcdo:is_safe_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#children_over_6"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#allergic_reaction_to_ACE_inhibitors"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#allergic_reaction_with_lisinopril"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#cautionary_reaction_lisinopril"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#overdose_reaction_lisinopril"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#serious_reaction_lisinopril"/>
+        <pcdo:treats rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#heart_attack"/>
+        <pcdo:treats rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#heart_failure"/>
+        <pcdo:treats rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#high_blood_pressure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#adults -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#adults">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Adults"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#allergic_reaction_to_ACE_inhibitors -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#allergic_reaction_to_ACE_inhibitors">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Allergic_Reaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#allergic_reaction_with_lisinopril -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#allergic_reaction_with_lisinopril">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Allergic_Reaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#better_blood_flow -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#better_blood_flow">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Effect_Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#cautionary_reaction_lisinopril -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#cautionary_reaction_lisinopril">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Cautionary_Reaction"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#cough"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#decreased_sexual_ability"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#diarrhea"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#dizziness"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#excessive_tiredness"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#headache"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#nausea"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#rash"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#runny_nose"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#sneezing"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#weakness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#chest_pain -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#chest_pain">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Chest_Pain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#children_over_6 -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#children_over_6">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Children"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#chills -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#chills">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Chills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#cough -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#cough">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Cough"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#decrease_chemicals -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#decrease_chemicals">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Mechanism_of_Action"/>
+        <pcdo:produces rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#better_blood_flow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#decreased_sexual_ability -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#decreased_sexual_ability">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Reproductive-based_Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#diarrhea -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#diarrhea">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Diarrhea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#dizziness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#dizziness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Dizziness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#eat_low_sodium_diet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#eat_low_sodium_diet">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Dietary_Instructions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#excessive_tiredness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#excessive_tiredness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Extreme_Tiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#fainting -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#fainting">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Fainting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#fainting_from_overdose -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#fainting_from_overdose">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Fainting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#fever -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#fever">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Fever"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#headache -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#headache">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Headache"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#heart_attack -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#heart_attack">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#heart_failure -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#heart_failure">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Heart_Failure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#high_blood_pressure -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#high_blood_pressure">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Hypertension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#inform_doctor_of_prescriptions_and_supplements -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#inform_doctor_of_prescriptions_and_supplements">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Active_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#lightheadedness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#lightheadedness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Lightheadedness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#lightheadedness_from_overdose -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#lightheadedness_from_overdose">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Lightheadedness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#liquid -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#liquid">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Liquid_Solution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#nausea -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#nausea">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Nausea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#once_a_day -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#once_a_day">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#oral_syringe -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#oral_syringe">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Oral_Method"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#overdose_reaction_lisinopril -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#overdose_reaction_lisinopril">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Overdose_Reaction"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#fainting_from_overdose"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#lightheadedness_from_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#people_who_are_pregnant -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#people_who_are_pregnant">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#people_with_angiodema -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#people_with_angiodema">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Illness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#people_with_diabetes -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#people_with_diabetes">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Illness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#rash -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#rash">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Skin_Rash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#runny_nose -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#runny_nose">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Runny_Nose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#sacubitril -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#sacubitril">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#sacubitril_drug_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#sacubitril_drug_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#sacubitril"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#serious_reaction_lisinopril -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#serious_reaction_lisinopril">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Serious_Reaction"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#chest_pain"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#chills"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#fainting"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#fever"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#lightheadedness"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#skin_yellowing"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#sore_throat"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#swelling"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#yellowing_eyes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#skin_yellowing -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#skin_yellowing">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Yellow_Skin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#sneezing -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#sneezing">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Respiratory_Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#sore_throat -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#sore_throat">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Sore_Throat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#swelling -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#swelling">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Swelling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#tablet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#tablet">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#take_if_you_forgotten -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#take_if_you_forgotten">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Make-up_Dosage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#valartan_drug_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#valartan_drug_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#valsartan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#valsartan -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#valsartan">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#weakness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#weakness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Unusual_Weakness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#yellowing_eyes -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/lisinopril.owl#yellowing_eyes">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Yellow_Eyes"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,757 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#"
+     xml:base="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:pcdo="http://sbmi.uth.edu/ontology/pcdo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#HIV_protease_inhibitors_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#HIV_protease_inhibitors_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#darunavir"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#fosamprenavir"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#lopinavir"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#nelfinavir"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#ritonavir"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#saquinavir"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#tipranavir"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#_Atorvastatin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#_Atorvastatin">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+        <pcdo:acts_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#decreases_bad_cholesterol"/>
+        <pcdo:acts_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#decreases_triglycerides"/>
+        <pcdo:acts_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#increases_good_cholesterol"/>
+        <pcdo:administered_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#orally"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#HIV_protease_inhibitors_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#antifungal_medication_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#cholesterol_medication_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#cobicistat-containing_medication_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#grapefruit_food_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#immune_system_medication_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#oral_contraceptive_medication_combination"/>
+        <pcdo:comes_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#tablet"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_who_are_breastfeeding"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_who_are_pregnanet"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_who_drink_alcohol_twice_a_day"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_diabetes"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_kidney_disease"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_liver_disease"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_low_blood_pressure"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_muscle_aches"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_seizures"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_thyroid_disease"/>
+        <pcdo:has_dosage_series rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#once_a_day_with_food"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#do_not_stop_taking_medication"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#follow_a_low-fat_low-cholesterol_diet"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#follow_an_exercise_recommendation"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#take_as_soon_as_you_forgot_a_dose"/>
+        <pcdo:is_safe_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#children_with_hereditory_history_of_hyperchloestoerolemia"/>
+        <pcdo:is_safe_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#teenagers_with_hereditory_history_of_hyperchloestoerolemia"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#allergic_reaction_to_atorvastatin"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#allergic_reaction_to_atorvastatin_ingredients"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#cautionary_reaction"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#serious_reaction"/>
+        <pcdo:treats rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#atherosclerosis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#allergic_reaction_to_atorvastatin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#allergic_reaction_to_atorvastatin">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Allergic_Reaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#allergic_reaction_to_atorvastatin_ingredients -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#allergic_reaction_to_atorvastatin_ingredients">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Allergic_Reaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#antifungal_medication_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#antifungal_medication_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Antifungals_Combination"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#itraconazole"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#ketoconazole"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#atherosclerosis -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#atherosclerosis">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Emergency_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#cautionary_reaction -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#cautionary_reaction">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Cautionary_Reaction"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#confusion"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#diarrhea"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#gas"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#heartburn"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#joint_pain"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#memory_loss"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#chest_pain -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#chest_pain">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Chest_Pain"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#children_with_hereditory_history_of_hyperchloestoerolemia -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#children_with_hereditory_history_of_hyperchloestoerolemia">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Children"/>
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Disease_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#cholesterol_medication_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#cholesterol_medication_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#fenofibrate"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#gemfibrozil"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#niacin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#cobicistat-containing_medication_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#cobicistat-containing_medication_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#confusion -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#confusion">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Confusion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#cyclosporine -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#cyclosporine">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#dark_colored_urine -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#dark_colored_urine">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Dark_Yellow_Urine"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#darunavir -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#darunavir">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#decreases_bad_cholesterol -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#decreases_bad_cholesterol">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Decrease_Bad_Cholesterol"/>
+        <pcdo:produces rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#heart_disease_mitigation"/>
+        <pcdo:produces rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#open_arteries_for_better_blood_flow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#decreases_triglycerides -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#decreases_triglycerides">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Decresse_Triglycerides"/>
+        <pcdo:produces rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#heart_disease_mitigation"/>
+        <pcdo:produces rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#open_arteries_for_better_blood_flow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#diarrhea -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#diarrhea">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Diarrhea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#difficulty_breathing -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#difficulty_breathing">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Difficult_Breathing"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#difficulty_swallowing -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#difficulty_swallowing">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Swallowing_Difficulty"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#do_not_stop_taking_medication -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#do_not_stop_taking_medication">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Special_instructions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#exterme_tiredness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#exterme_tiredness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Extreme_Tiredness"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#fenofibrate -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#fenofibrate">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#fever -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#fever">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Fever"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#follow_a_low-fat_low-cholesterol_diet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#follow_a_low-fat_low-cholesterol_diet">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Dietary_Instructions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#follow_an_exercise_recommendation -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#follow_an_exercise_recommendation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Physical_Instructions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#fosamprenavir -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#fosamprenavir">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#gas -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#gas">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Gas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#gemfibrozil -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#gemfibrozil">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#grapefruit -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#grapefruit">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#grapefruit_food_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#grapefruit_food_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Food_Combination"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#grapefruit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#heart_disease_mitigation -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#heart_disease_mitigation">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Effect_Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#heartburn -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#heartburn">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Heartburn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#hives -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#hives">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Hives"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#hoarseness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#hoarseness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Hoarseness"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#immune_system_medication_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#immune_system_medication_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#cyclosporine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#increases_good_cholesterol -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#increases_good_cholesterol">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Increase_Good_Cholesterol"/>
+        <pcdo:produces rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#heart_disease_mitigation"/>
+        <pcdo:produces rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#open_arteries_for_better_blood_flow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#itching -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#itching">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Itchiness"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#itraconazole -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#itraconazole">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#joint_pain -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#joint_pain">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Joint_Pain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#ketoconazole -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#ketoconazole">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#lack_of_energy -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#lack_of_energy">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Lack_or_Loss_of_Strength"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#lopinavir -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#lopinavir">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#loss_of_appetite -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#loss_of_appetite">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Loss_of_Appetite"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#memory_loss -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#memory_loss">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Sensory-based_Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#muscle_pain -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#muscle_pain">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Muscle_Pain"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#nausea -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#nausea">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Nausea"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#nelfinavir -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#nelfinavir">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#niacin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#niacin">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#once_a_day_with_food -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#once_a_day_with_food">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#open_arteries_for_better_blood_flow -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#open_arteries_for_better_blood_flow">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Effect_Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#oral_contraceptive_medication_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#oral_contraceptive_medication_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Oral_Contraceptives_Combination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#orally -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#orally">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Oral_Method"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#pain_in_the_upper_right_of_the_stomach -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#pain_in_the_upper_right_of_the_stomach">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Stomach_Pain"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_who_are_breastfeeding -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_who_are_breastfeeding">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Habit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_who_are_pregnanet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_who_are_pregnanet">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_who_drink_alcohol_twice_a_day -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_who_drink_alcohol_twice_a_day">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Habit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_diabetes -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_diabetes">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Patients_with_Diabetes_Mellitus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_kidney_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_kidney_disease">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Patients_with_Kidney_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_liver_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_liver_disease">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Patients_with_Liver_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_low_blood_pressure -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_low_blood_pressure">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Disease_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_muscle_aches -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_muscle_aches">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_seizures -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_seizures">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Disease_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_thyroid_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#people_with_thyroid_disease">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Disease_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#rash -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#rash">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Skin_Rash"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#ritonavir -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#ritonavir">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#saquinavir -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#saquinavir">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#serious_reaction -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#serious_reaction">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Serious_Reaction"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#chest_pain"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#dark_colored_urine"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#difficulty_breathing"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#difficulty_swallowing"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#exterme_tiredness"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#fever"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#hives"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#hoarseness"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#itching"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#lack_of_energy"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#loss_of_appetite"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#muscle_pain"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#nausea"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#pain_in_the_upper_right_of_the_stomach"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#rash"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#swelling"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#unusual_bleeding"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#weakness"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#yellowing_of_the_eyes"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#yellowing_of_the_skin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#swelling -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#swelling">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Swelling"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#tablet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#tablet">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#take_as_soon_as_you_forgot_a_dose -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#take_as_soon_as_you_forgot_a_dose">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Make-up_Dosage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#teenagers_with_hereditory_history_of_hyperchloestoerolemia -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#teenagers_with_hereditory_history_of_hyperchloestoerolemia">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Disease_Condition"/>
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Teenagers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#tipranavir -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#tipranavir">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#unusual_bleeding -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#unusual_bleeding">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Unusual_Bleeding"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#weakness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#weakness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Unusual_Weakness"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#yellowing_of_the_eyes -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#yellowing_of_the_eyes">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Yellow_Eyes"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#yellowing_of_the_skin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#yellowing_of_the_skin">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Yellow_Skin"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/atorvastatin.owl#call_your_doctor"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

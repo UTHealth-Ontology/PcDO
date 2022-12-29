@@ -1,0 +1,711 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#"
+     xml:base="http://sbmi.uth.edu/ontology/pcdo/metformin.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:pcdo="http://sbmi.uth.edu/ontology/pcdo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#Metformin_Alcohol_Combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#Metformin_Alcohol_Combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Food_Combination"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#alcohol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#_Metformin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#_Metformin">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+        <pcdo:acts_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#decreasing_glucose_amount"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#Metformin_Alcohol_Combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#asthma_medication_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#beta_blocker_medication_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#calcium_channel_blocker_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#cold_medication_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#diabetes_medication_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#high_blood_pressure_medication_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#hormone_replacement_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#mental_illness_medication_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_contraceptive_medication_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_steroid_medication_combination"/>
+        <pcdo:comes_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#extended_tablet"/>
+        <pcdo:comes_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#liquid"/>
+        <pcdo:comes_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#tablet"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_who_had_a_coma"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_who_had_a_stroke"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_diabetic_ketoacodosis"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_heart_attack"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_heart_disease"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_kidney_disease"/>
+        <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_liver_disease"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_chew"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_crush"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_split"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#follow_dietary_recommendation"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#follow_exercise_recommendation"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#monitor_your_blood_sugar_carefully"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#take_dose_if_you_forgotten_the_dose"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#take_whole"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#cautionary_reaction_metformin"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#overdose_reaction_metformin"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#serious_reaction_metformin"/>
+        <pcdo:treats rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#type_2_diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#abnormal_heartbeat -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#abnormal_heartbeat">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Abnormal_Heartbeat"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#alcohol -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#alcohol">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#asthma_medication_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#asthma_medication_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#beta_blocker_medication_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#beta_blocker_medication_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Beta-Blockers_Combination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#bloating -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#bloating">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Bloating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#calcium_channel_blocker_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#calcium_channel_blocker_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Calcium_Channel_Blocker_Combination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Call_Poison_Control_Helpline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_your_doctor_for_serious_reaction -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_your_doctor_for_serious_reaction">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Emergency_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#cautionary_reaction_metformin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#cautionary_reaction_metformin">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Cautionary_Reaction"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#bloating"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#constipation"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#diarrhea"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#flushing_of_the_skin"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#gas"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#headache"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#heartburn"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#indigestion"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#muscle_pain"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#nail_changes"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#stomach_pain"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#unpleasant_metallic_taste"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#chest_pain -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#chest_pain">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Chest_Pain"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_your_doctor_for_serious_reaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#cold_medication_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#cold_medication_combination">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Cold_Medication_Combination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#constipation -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#constipation">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Constipation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#controls_blood_sugar -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#controls_blood_sugar">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Effect_Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#decreased_appetite -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#decreased_appetite">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Decreased_Appetite"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#decreasing_glucose_amount -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#decreasing_glucose_amount">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Decrease_Glucose_Amount"/>
+        <pcdo:produces rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#controls_blood_sugar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#deep_rapid_breathing -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#deep_rapid_breathing">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Labored_Breathing"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#diabetes_medication_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#diabetes_medication_combination">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Diabetes_Medication_Combination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#diarrhea -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#diarrhea">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Diarrhea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#discomfort -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#discomfort">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Discomfort_Feeling"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#dizziness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#dizziness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Dizziness"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_chew -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_chew">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Do_Not_Chew"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_crush -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_crush">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Do_Not_Crush"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_split -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_split">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Do_Not_Split"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#extended_tablet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#extended_tablet">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tablet"/>
+        <pcdo:delivered_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_with_extended_release_tablet"/>
+        <pcdo:taken_in_the_form rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_extended_tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#extreme_tiredness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#extreme_tiredness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Extreme_Tiredness"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#feeling_cold -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#feeling_cold">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Cold_Feeling"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#flushing_of_the_skin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#flushing_of_the_skin">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Flushing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#flushing_of_the_skin_from_overdose -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#flushing_of_the_skin_from_overdose">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Flushing"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#follow_dietary_recommendation -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#follow_dietary_recommendation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Dietary_Instructions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#follow_exercise_recommendation -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#follow_exercise_recommendation">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Physical_Instructions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#gas -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#gas">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Gas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#headache -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#headache">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Headache"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#heartburn -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#heartburn">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Heartburn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#high_blood_pressure_medication_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#high_blood_pressure_medication_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Blood_Pressure_Medications_Combination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#hormone_replacement_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#hormone_replacement_combination">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Hormone_Drug_Combination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#indigestion -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#indigestion">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Indigestion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#lightheadedness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#lightheadedness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Lightheadedness"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#liquid -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#liquid">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Liquid_Solution"/>
+        <pcdo:delivered_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_by_liquid"/>
+        <pcdo:taken_in_the_form rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_of_liquid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#mental_illness_medication_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#mental_illness_medication_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Antipsychotic_Drug_Combination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#monitor_your_blood_sugar_carefully -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#monitor_your_blood_sugar_carefully">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Active_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#muscle_pain -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#muscle_pain">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Muscle_Pain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#muscle_pain_from_overdose -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#muscle_pain_from_overdose">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Muscle_Pain"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#nail_changes -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#nail_changes">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Skin_Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#nausea -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#nausea">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Nausea"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_extended_tablet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_extended_tablet">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_of_liquid -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_of_liquid">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_contraceptive_medication_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_contraceptive_medication_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Oral_Contraceptives_Combination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_by_liquid -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_by_liquid">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Oral_Method"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_by_tablet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_by_tablet">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Oral_Method"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_with_extended_release_tablet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_with_extended_release_tablet">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Oral_Method"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_steroid_medication_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_steroid_medication_combination">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Sterioid_Medication_Combination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#overdose_reaction_metformin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#overdose_reaction_metformin">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Overdose_Reaction"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#abnormal_heartbeat"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#decreased_appetite"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#deep_rapid_breathing"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#discomfort"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#dizziness"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#extreme_tiredness"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#feeling_cold"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#flushing_of_the_skin_from_overdose"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#lightheadedness"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#muscle_pain_from_overdose"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#nausea"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#shortness_of_breath"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#stomach_pain_from_overdose"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#vomitting"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#weakness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_who_had_a_coma -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_who_had_a_coma">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_who_had_a_stroke -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_who_had_a_stroke">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Disease_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_diabetic_ketoacodosis -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_diabetic_ketoacodosis">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#People_with_Disease_Condition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_heart_attack -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_heart_attack">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Patients_with_Severe_Heart_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_heart_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_heart_disease">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Patients_with_Heart_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_kidney_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_kidney_disease">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Patients_with_Kidney_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_liver_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_liver_disease">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Patients_with_Liver_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#rash -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#rash">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Skin_Rash"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_your_doctor_for_serious_reaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#serious_reaction_metformin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#serious_reaction_metformin">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Serious_Reaction"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#chest_pain"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#rash"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#shortness_of_breath -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#shortness_of_breath">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Shortness_of_Breath"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#stomach_pain -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#stomach_pain">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Stomach_Pain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#stomach_pain_from_overdose -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#stomach_pain_from_overdose">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Stomach_Pain"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#tablet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#tablet">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tablet"/>
+        <pcdo:delivered_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_by_tablet"/>
+        <pcdo:taken_in_the_form rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#twice_a_day_tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#take_dose_if_you_forgotten_the_dose -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#take_dose_if_you_forgotten_the_dose">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Make-up_Dosage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#take_whole -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#take_whole">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Take_Whole"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#twice_a_day_tablet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#twice_a_day_tablet">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Twice_a_Day_Dosage_Series"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#type_2_diabetes -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#type_2_diabetes">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Diabetes_mellitus_Type_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#unpleasant_metallic_taste -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#unpleasant_metallic_taste">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Metallic_Taste_in_Mouth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#vomitting -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#vomitting">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Vomitting"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/metformin.owl#weakness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#weakness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Unusual_Weakness"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

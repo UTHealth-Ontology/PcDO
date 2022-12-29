@@ -1,0 +1,568 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#"
+     xml:base="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:pcdo="http://sbmi.uth.edu/ontology/pcdo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#Amvaz -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#Amvaz">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#Katerzia -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#Katerzia">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#Norvasc -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#Norvasc">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#adults -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#adults">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Adults"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#amlodipine -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#amlodipine">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+        <pcdo:acts_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#lowering_blood_pressure"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#misc_drug_amlodipine_combination"/>
+        <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#seizure_combination"/>
+        <pcdo:comes_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#liquid"/>
+        <pcdo:comes_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#tablet"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#ask_doctor_for_list_of_allergic_ingredients"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#do_not_stop_taking"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#follow_low-salt_diet"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#shake_liquid_before_use"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#tell_doctor_you_had_liver_disease"/>
+        <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#tell_doctor_you_have_heart_problems"/>
+        <pcdo:is_also_known_as rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#Amvaz"/>
+        <pcdo:is_also_known_as rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#Katerzia"/>
+        <pcdo:is_also_known_as rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#Norvasc"/>
+        <pcdo:is_safe_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#adults"/>
+        <pcdo:is_safe_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#children_over_6"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#amlodipine_overdose_reaction"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#amlodipine_severe_reaction"/>
+        <pcdo:may_cause rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#cautionary_reaction_amlodipine"/>
+        <pcdo:treats rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#chest_pain"/>
+        <pcdo:treats rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#coronary_artery_disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#amlodipine_overdose_reaction -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#amlodipine_overdose_reaction">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Overdose_Reaction"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#dizziness_from_overdose"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#fainting_from_overdose"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#rapid_heart_beats_from_overdose"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#amlodipine_severe_reaction -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#amlodipine_severe_reaction">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Serious_Reaction"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#fainting"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#rapid_heart_beats"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#severe_chest_pain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#ask_doctor_for_list_of_allergic_ingredients -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#ask_doctor_for_list_of_allergic_ingredients">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Active_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#carbamazepine -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#carbamazepine">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#carbamazepine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#cautionary_reaction_amlodipine -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#cautionary_reaction_amlodipine">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Cautionary_Reaction"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#dizziness"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#drowsiness"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#excessive_tiredness"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#flushing"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#headache"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#nausea"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#stomach_pain"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#swollen_ankles"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#swollen_feet"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#swollen_hands"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#swollen_lower_legs"/>
+        <pcdo:has_signs rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#upset_stomach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#chest_pain -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#chest_pain">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#children_over_6 -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#children_over_6">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Children"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#clarithromycin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#clarithromycin"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#coronary_artery_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#coronary_artery_disease">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Coronary_Heart_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#cyclosporine -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#cyclosporine"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#dizziness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#dizziness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Dizziness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#dizziness_from_overdose -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#dizziness_from_overdose">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Dizziness"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#if_overdose_call_poison_control_helpline_at_1-800-222-1222"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#do_not_stop_taking -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#do_not_stop_taking">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Special_instructions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#drowsiness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#drowsiness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Unusual_Drowsiness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#efavirenz -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#efavirenz"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#excessive_tiredness -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#excessive_tiredness">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Extreme_Tiredness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#fainting -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#fainting">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Fainting"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#inform_your_doctor_severe_reaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#fainting_from_overdose -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#fainting_from_overdose">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Fainting"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#if_overdose_call_poison_control_helpline_at_1-800-222-1222"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#flushing -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#flushing">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Flushing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#follow_low-salt_diet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#follow_low-salt_diet">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Dietary_Instructions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#headache -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#headache">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Headache"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#high_blood_pressure -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#high_blood_pressure">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#if_overdose_call_poison_control_helpline_at_1-800-222-1222 -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#if_overdose_call_poison_control_helpline_at_1-800-222-1222">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Call_Poison_Control_Helpline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#indinavir -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#indinavir"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#inform_your_doctor_severe_reaction -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#inform_your_doctor_severe_reaction">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Emergency_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#itraconazole -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#itraconazole"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#ketoconazole -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#ketoconazole"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#liquid -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#liquid">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Liquid_Solution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#lovasstatin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#lovasstatin"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#lowering_blood_pressure -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#lowering_blood_pressure">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Lowering_Blood_Pressure"/>
+        <pcdo:produces rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#relaxation_of_the_blood_vessels"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#misc_drug_amlodipine_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#misc_drug_amlodipine_combination">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#clarithromycin"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#cyclosporine"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#efavirenz"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#indinavir"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#itraconazole"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#ketoconazole"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#lovasstatin"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#nefazodone"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#nelffinavir"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#nevirapine"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#rifabutin"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#ritonavir"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#simvastatin"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#tracrolimus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#nausea -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#nausea">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Nausea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#nefazodone -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#nefazodone"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#nelffinavir -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#nelffinavir"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#nevirapine -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#nevirapine"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#once_a_day -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#once_a_day">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#phenobarbital -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#phenobarbital">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#phenobarbital"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#phenytoin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#phenytoin">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#phenytoin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#rapid_heart_beats -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#rapid_heart_beats">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Fast_Heartbeat"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#inform_your_doctor_severe_reaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#rapid_heart_beats_from_overdose -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#rapid_heart_beats_from_overdose">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Fast_Heartbeat"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#if_overdose_call_poison_control_helpline_at_1-800-222-1222"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#relaxation_of_the_blood_vessels -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#relaxation_of_the_blood_vessels">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Effect_Outcome"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#rifabutin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#rifabutin"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#rifampin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#rifampin"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#ritonavir -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#ritonavir"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#seizure_combination -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#seizure_combination">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drug_Combination"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#carbamazepine"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#phenobarbital"/>
+        <pcdo:has_drug_interactions_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#phenytoin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#severe_chest_pain -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#severe_chest_pain">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Chest_Pain"/>
+        <pcdo:need_to_take_action rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#inform_your_doctor_severe_reaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#shake_liquid_before_use -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#shake_liquid_before_use">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Handling_Instruction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#simvastatin -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#simvastatin"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#stomach_pain -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#stomach_pain">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Stomach_Pain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#swollen_ankles -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#swollen_ankles">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Swelling_of_the_Ankles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#swollen_feet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#swollen_feet">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Swelling_of_the_Feet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#swollen_hands -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#swollen_hands">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Swelling_of_the_Hands"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#swollen_lower_legs -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#swollen_lower_legs">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Swelling_of_the_Lower_Legs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#tablet -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#tablet">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#tell_doctor_you_had_liver_disease -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#tell_doctor_you_had_liver_disease">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Active_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#tell_doctor_you_have_heart_problems -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#tell_doctor_you_have_heart_problems">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Active_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#tracrolimus -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#tracrolimus"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#upset_stomach -->
+
+    <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#upset_stomach">
+        <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Stomach_Discomfort"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
