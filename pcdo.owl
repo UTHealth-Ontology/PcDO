@@ -13720,6 +13720,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Twice_a_Day_Dosage_Series -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Twice_a_Day_Dosage_Series">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Dosage_Series"/>
+    </owl:Class>
+    
+
+
     <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Weight_Loss_Drug_Combination -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Weight_Loss_Drug_Combination">
