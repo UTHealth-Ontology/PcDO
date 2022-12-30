@@ -624,6 +624,15 @@
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#may_result -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontology/pcdo#may_result">
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Target"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#need_to_take_action -->
 
     <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontology/pcdo#need_to_take_action">
@@ -792,15 +801,6 @@ Dosage-&gt;Dosage</rdfs:comment>
         <skos:changeNote>change range to Drug Target
 
 2022- done</skos:changeNote>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#may_result -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#may_result">
-        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Target"/>
-        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Symptom"/>
     </owl:ObjectProperty>
     
 
@@ -1598,6 +1598,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Blood_Thinner_Combination -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Blood_Thinner_Combination">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+    </owl:Class>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#Blood_in_Stool -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Blood_in_Stool">
@@ -1727,6 +1735,14 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Calves_Pain_After_Exterion">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Muscular-Skeletal_Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Cancer_Medication_Combination -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Cancer_Medication_Combination">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
     </owl:Class>
     
 
@@ -1913,6 +1929,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Cold_Medication_Combination -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Cold_Medication_Combination">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+    </owl:Class>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#Cold_Sweats -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Cold_Sweats">
@@ -2063,6 +2087,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Decrease_Glucose_Amount -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Decrease_Glucose_Amount">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Mechanism_of_Action"/>
+    </owl:Class>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#Decrease_Hepatic_Glucose_Production -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Decrease_Hepatic_Glucose_Production">
@@ -2123,6 +2155,14 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Develop_Lactic_Acidosis">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Adverse_Drug_Reactions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Diabetes_Medication_Combination -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Diabetes_Medication_Combination">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
     </owl:Class>
     
 
@@ -2268,6 +2308,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Do_Not_Freeze">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Storage_instruction"/>
         <rdfs:comment>pertains to oral liquid</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Do_Not_Split -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Do_Not_Split">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Precautionary_instructions"/>
     </owl:Class>
     
 
@@ -3182,6 +3230,22 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Hormone_Drug -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Hormone_Drug">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Hormone_Drug_Combination -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Hormone_Drug_Combination">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+    </owl:Class>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#Human_Activity_Channel -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Human_Activity_Channel">
@@ -3631,6 +3695,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Lowering_Blood_Pressure -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Lowering_Blood_Pressure">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Mechanism_of_Action"/>
+    </owl:Class>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#Lungs -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Lungs">
@@ -3907,6 +3979,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     <!-- http://sbmi.uth.edu/ontology/pcdo#Occurrence -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Occurrence"/>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Once_a_Day_Dosage_Series -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Once_a_Day_Dosage_Series">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Dosage_Series"/>
+    </owl:Class>
     
 
 
@@ -4824,6 +4904,22 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Seizure_Drug -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Seizure_Drug">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Seizure_Drug_Combination -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Seizure_Drug_Combination">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+    </owl:Class>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#Seizures -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Seizures">
@@ -5102,6 +5198,22 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Special_Dietary_Instructions -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Special_Dietary_Instructions">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Special_instructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Special_Physical_Instructions -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Special_Physical_Instructions">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Special_instructions"/>
+    </owl:Class>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#Special_Population -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Special_Population">
@@ -5129,6 +5241,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     <!-- http://sbmi.uth.edu/ontology/pcdo#Statins_Combination -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Statins_Combination">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Sterioid_Medication_Combination -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Sterioid_Medication_Combination">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
     </owl:Class>
     
@@ -5397,6 +5517,14 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Take_Whole -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Take_Whole">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Precautionary_instructions"/>
+    </owl:Class>
+    
+
+
     <!-- http://sbmi.uth.edu/ontology/pcdo#Take_at_Nighttime -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Take_at_Nighttime">
@@ -5575,6 +5703,14 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Trouble_Sleeping">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Sensory-based_Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Twice_a_Day_Dosage_Series -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Twice_a_Day_Dosage_Series">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Dosage_Series"/>
     </owl:Class>
     
 
@@ -5803,6 +5939,14 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Weight_Loss">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Digestive_Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontology/pcdo#Weight_Loss_Drug_Combination -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Weight_Loss_Drug_Combination">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
     </owl:Class>
     
 
@@ -6879,7 +7023,7 @@ Dosage-&gt;Dosage</rdfs:comment>
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#carbamazepine">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Major"/>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Moderate"/>
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drug"/>
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Seizure_Drug"/>
     </owl:Class>
     
 
@@ -11434,7 +11578,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#phenobarbital">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Moderate"/>
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drug"/>
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Seizure_Drug"/>
     </owl:Class>
     
 
@@ -11484,7 +11628,7 @@ Dosage-&gt;Dosage</rdfs:comment>
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#phenytoin">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Major"/>
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Moderate"/>
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drug"/>
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Seizure_Drug"/>
     </owl:Class>
     
 
@@ -13624,146 +13768,10 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Blood_Thinner_Combination -->
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Instructions_Involving_Food -->
 
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Blood_Thinner_Combination">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Cancer_Medication_Combination -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Cancer_Medication_Combination">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Cold_Medication_Combination -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Cold_Medication_Combination">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Decrease_Glucose_Amount -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Decrease_Glucose_Amount">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Mechanism_of_Action"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Diabetes_Medication_Combination -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Diabetes_Medication_Combination">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Do_Not_Split -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Do_Not_Split">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Precautionary_instructions"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Hormone_Drug -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Hormone_Drug">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Hormone_Drug_Combination -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Hormone_Drug_Combination">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Lowering_Blood_Pressure -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Lowering_Blood_Pressure">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Mechanism_of_Action"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Dosage_Series"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drug -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drug">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drug_Combination -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drug_Combination">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Dietary_Instructions -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Dietary_Instructions">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Instructions_Involving_Food">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Special_instructions"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Physical_Instructions -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Physical_Instructions">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Special_instructions"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Sterioid_Medication_Combination -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Sterioid_Medication_Combination">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Take_Whole -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Take_Whole">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Precautionary_instructions"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Twice_a_Day_Dosage_Series -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Twice_a_Day_Dosage_Series">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Dosage_Series"/>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Weight_Loss_Drug_Combination -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Weight_Loss_Drug_Combination">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug-Drug_Combination"/>
     </owl:Class>
     
 
