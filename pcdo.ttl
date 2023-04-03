@@ -371,13 +371,6 @@ pcdo:lasts rdf:type owl:ObjectProperty ;
 
 ###  http://sbmi.uth.edu/ontology/pcdo#leads
 pcdo:leads rdf:type owl:ObjectProperty ;
-           rdfs:domain [ rdf:type owl:Class ;
-                         owl:unionOf ( pcdo:Cause
-                                       pcdo:Drug_Target
-                                       pcdo:Outcome
-                                       pcdo:Reaction
-                                     )
-                       ] ;
            rdfs:range pcdo:Outcome ;
            rdfs:comment "Target -> Outome" ;
            rdfs:isDefinedBy "Cause -> Outcome" .
@@ -544,6 +537,34 @@ pcdo:treats rdf:type owl:ObjectProperty ;
             skos:changeNote """change range to Drug Target
 
 2022- done""" .
+
+
+###  https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_from_cause
+:leads_from_cause rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf pcdo:leads ;
+                  rdfs:domain pcdo:Cause ;
+                  rdfs:range pcdo:Outcome .
+
+
+###  https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_from_drug_target
+:leads_from_drug_target rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf pcdo:leads ;
+                        rdfs:domain pcdo:Drug_Target ;
+                        rdfs:range pcdo:Outcome .
+
+
+###  https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_from_reaction
+:leads_from_reaction rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf pcdo:leads ;
+                     rdfs:domain pcdo:Reaction ;
+                     rdfs:range pcdo:Outcome .
+
+
+###  https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_to_outcome
+:leads_to_outcome rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf pcdo:leads ;
+                  rdfs:domain pcdo:Outcome ;
+                  rdfs:range pcdo:Outcome .
 
 
 #################################################################
@@ -1175,12 +1196,12 @@ pcdo:Cause rdf:type owl:Class ;
                              owl:someValuesFrom pcdo:Probability
                            ] ,
                            [ rdf:type owl:Restriction ;
-                             owl:onProperty pcdo:leads ;
-                             owl:someValuesFrom pcdo:Outcome
-                           ] ,
-                           [ rdf:type owl:Restriction ;
                              owl:onProperty pcdo:localized_at ;
                              owl:someValuesFrom pcdo:Body_Location
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :leads_from_cause ;
+                             owl:someValuesFrom pcdo:Outcome
                            ] .
 
 
@@ -1599,6 +1620,10 @@ pcdo:Drug rdf:type owl:Class ;
                             owl:someValuesFrom pcdo:Drug_Combination
                           ] ,
                           [ rdf:type owl:Restriction ;
+                            owl:onProperty pcdo:caution_for ;
+                            owl:someValuesFrom pcdo:Special_Population
+                          ] ,
+                          [ rdf:type owl:Restriction ;
                             owl:onProperty pcdo:comes_in ;
                             owl:someValuesFrom pcdo:Form
                           ] ,
@@ -1744,16 +1769,16 @@ pcdo:Drug_Target rdf:type owl:Class ;
                                    owl:someValuesFrom pcdo:Duration
                                  ] ,
                                  [ rdf:type owl:Restriction ;
-                                   owl:onProperty pcdo:leads ;
-                                   owl:someValuesFrom pcdo:Outcome
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
                                    owl:onProperty pcdo:originates ;
                                    owl:someValuesFrom pcdo:Source
                                  ] ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty pcdo:spreads_through ;
                                    owl:someValuesFrom pcdo:Channel
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :leads_from_drug_target ;
+                                   owl:someValuesFrom pcdo:Outcome
                                  ] ;
                  rdfs:comment "an entity condition that is the primary target of a drug" ;
                  rdfs:seeAlso "Cause for specific details that the condition results in" ;
@@ -2614,7 +2639,15 @@ pcdo:Organization rdf:type owl:Class .
 
 
 ###  http://sbmi.uth.edu/ontology/pcdo#Outcome
-pcdo:Outcome rdf:type owl:Class .
+pcdo:Outcome rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty pcdo:associated ;
+                               owl:someValuesFrom pcdo:Drug_Target
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty pcdo:happens ;
+                               owl:someValuesFrom pcdo:Probability
+                             ] .
 
 
 ###  http://sbmi.uth.edu/ontology/pcdo#Overdose_instruction
@@ -3031,10 +3064,6 @@ pcdo:Reaction rdf:type owl:Class ;
                                 owl:someValuesFrom pcdo:Duration
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty pcdo:leads ;
-                                owl:someValuesFrom pcdo:Outcome
-                              ] ,
-                              [ rdf:type owl:Restriction ;
                                 owl:onProperty pcdo:localized_at ;
                                 owl:someValuesFrom pcdo:Body_Location
                               ] ,
@@ -3045,6 +3074,10 @@ pcdo:Reaction rdf:type owl:Class ;
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty pcdo:occurs_after ;
                                 owl:someValuesFrom pcdo:Reaction
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :leads_from_reaction ;
+                                owl:someValuesFrom pcdo:Outcome
                               ] ;
               rdfs:comment "physiological-based reactions" .
 
@@ -3352,6 +3385,10 @@ pcdo:Special_Physical_Instructions rdf:type owl:Class ;
 
 ###  http://sbmi.uth.edu/ontology/pcdo#Special_Population
 pcdo:Special_Population rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty pcdo:personally_take ;
+                                          owl:someValuesFrom pcdo:Special_instructions
+                                        ] ;
                         skos:altLabel "People" .
 
 
