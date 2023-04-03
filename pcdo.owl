@@ -550,16 +550,6 @@
     <!-- http://sbmi.uth.edu/ontology/pcdo#leads -->
 
     <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontology/pcdo#leads">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/pcdo#Cause"/>
-                    <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/pcdo#Drug_Target"/>
-                    <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
-                    <rdf:Description rdf:about="http://sbmi.uth.edu/ontology/pcdo#Reaction"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
         <rdfs:comment>Target -&gt; Outome</rdfs:comment>
         <rdfs:isDefinedBy>Cause -&gt; Outcome</rdfs:isDefinedBy>
@@ -801,6 +791,46 @@ Dosage-&gt;Dosage</rdfs:comment>
         <skos:changeNote>change range to Drug Target
 
 2022- done</skos:changeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_from_cause -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_from_cause">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#leads"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Cause"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_from_drug_target -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_from_drug_target">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#leads"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Target"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_from_reaction -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_from_reaction">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#leads"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Reaction"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_to_outcome -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_to_outcome">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#leads"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
     </owl:ObjectProperty>
     
 
@@ -1781,14 +1811,14 @@ Dosage-&gt;Dosage</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#leads"/>
-                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#localized_at"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Body_Location"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#localized_at"/>
-                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Body_Location"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_from_cause"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2453,6 +2483,12 @@ Dosage-&gt;Dosage</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#caution_for"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Special_Population"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#comes_in"/>
                 <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Form"/>
             </owl:Restriction>
@@ -2675,12 +2711,6 @@ Dosage-&gt;Dosage</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#leads"/>
-                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#originates"/>
                 <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Source"/>
             </owl:Restriction>
@@ -2689,6 +2719,12 @@ Dosage-&gt;Dosage</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#spreads_through"/>
                 <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Channel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_from_drug_target"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>an entity condition that is the primary target of a drug</rdfs:comment>
@@ -4054,7 +4090,20 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <!-- http://sbmi.uth.edu/ontology/pcdo#Outcome -->
 
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Outcome">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#associated"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug_Target"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#happens"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Probability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -4709,12 +4758,6 @@ Dosage-&gt;Dosage</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#leads"/>
-                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#localized_at"/>
                 <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Body_Location"/>
             </owl:Restriction>
@@ -4729,6 +4772,12 @@ Dosage-&gt;Dosage</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#occurs_after"/>
                 <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Reaction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#leads_from_reaction"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Outcome"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>physiological-based reactions</rdfs:comment>
@@ -5217,6 +5266,12 @@ Dosage-&gt;Dosage</rdfs:comment>
     <!-- http://sbmi.uth.edu/ontology/pcdo#Special_Population -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Special_Population">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sbmi.uth.edu/ontology/pcdo#personally_take"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Special_instructions"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <skos:altLabel>People</skos:altLabel>
     </owl:Class>
     
