@@ -18,6 +18,83 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Cold_Medication_Combination -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Cold_Medication_Combination"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Decrease_Glucose_Amount -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Decrease_Glucose_Amount"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Diabetes_Medication_Combination -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Diabetes_Medication_Combination"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Do_Not_Split -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Do_Not_Split"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Hormone_Drug_Combination -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Hormone_Drug_Combination"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Dietary_Instructions -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Dietary_Instructions"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Physical_Instructions -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Physical_Instructions"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Sterioid_Medication_Combination -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Sterioid_Medication_Combination"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Take_Whole -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Take_Whole"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Twice_a_Day_Dosage_Series -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Twice_a_Day_Dosage_Series"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -61,6 +138,9 @@
         <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_heart_disease"/>
         <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_kidney_disease"/>
         <pcdo:discouraged_for rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_liver_disease"/>
+        <pcdo:has_dosage_series rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_extended_tablet"/>
+        <pcdo:has_dosage_series rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_of_liquid"/>
+        <pcdo:has_dosage_series rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#twice_a_day_tablet"/>
         <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_chew"/>
         <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_crush"/>
         <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_split"/>
@@ -285,7 +365,6 @@
     <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#extended_tablet">
         <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tablet"/>
         <pcdo:delivered_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_with_extended_release_tablet"/>
-        <pcdo:taken_in_the_form rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_extended_tablet"/>
     </owl:NamedIndividual>
     
 
@@ -403,7 +482,6 @@
     <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#liquid">
         <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Liquid_Solution"/>
         <pcdo:delivered_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_by_liquid"/>
-        <pcdo:taken_in_the_form rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_of_liquid"/>
     </owl:NamedIndividual>
     
 
@@ -462,6 +540,7 @@
 
     <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_extended_tablet">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series"/>
+        <pcdo:taken_in_the_form rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#extended_tablet"/>
     </owl:NamedIndividual>
     
 
@@ -470,6 +549,7 @@
 
     <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_of_liquid">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series"/>
+        <pcdo:taken_in_the_form rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#liquid"/>
     </owl:NamedIndividual>
     
 
@@ -643,7 +723,6 @@
     <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#tablet">
         <rdf:type rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tablet"/>
         <pcdo:delivered_by rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_by_tablet"/>
-        <pcdo:taken_in_the_form rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#twice_a_day_tablet"/>
     </owl:NamedIndividual>
     
 
@@ -668,6 +747,7 @@
 
     <owl:NamedIndividual rdf:about="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#twice_a_day_tablet">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Twice_a_Day_Dosage_Series"/>
+        <pcdo:taken_in_the_form rdf:resource="http://sbmi.uth.edu/ontology/pcdo/metformin.owl#tablet"/>
     </owl:NamedIndividual>
     
 
