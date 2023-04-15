@@ -18,6 +18,41 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Lowering_Blood_Pressure -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Lowering_Blood_Pressure"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drug_Combination -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Seizure_Drug_Combination"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Dietary_Instructions -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Dietary_Instructions"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -68,6 +103,7 @@
         <pcdo:avoid_taking_with rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#seizure_combination"/>
         <pcdo:comes_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#liquid"/>
         <pcdo:comes_in rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#tablet"/>
+        <pcdo:has_dosage_series rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#once_a_day"/>
         <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#ask_doctor_for_list_of_allergic_ingredients"/>
         <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#do_not_stop_taking"/>
         <pcdo:has_special_instructions rdf:resource="http://sbmi.uth.edu/ontology/pcdo/amlodipine.owl#follow_low-salt_diet"/>
