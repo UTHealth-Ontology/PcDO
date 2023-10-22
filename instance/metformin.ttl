@@ -1,0 +1,477 @@
+@prefix : <http://sbmi.uth.edu/ontology/pcdo/metformin.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix pcdo: <http://sbmi.uth.edu/ontology/pcdo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@base <http://sbmi.uth.edu/ontology/pcdo/metformin.owl> .
+
+<http://sbmi.uth.edu/ontology/pcdo/metformin.owl> rdf:type owl:Ontology ;
+                                                   owl:imports <https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#Metformin_Alcohol_Combination
+:Metformin_Alcohol_Combination rdf:type owl:NamedIndividual ,
+                                        pcdo:Drug-Food_Combination ;
+                               pcdo:has_drug_interactions_with :alcohol .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#_Metformin
+:_Metformin rdf:type owl:NamedIndividual ,
+                     pcdo:Drug ;
+            pcdo:acts_by :decreasing_glucose_amount ;
+            pcdo:avoid_taking_with :Metformin_Alcohol_Combination ,
+                                   :asthma_medication_combination ,
+                                   :beta_blocker_medication_combination ,
+                                   :calcium_channel_blocker_combination ,
+                                   :cold_medication_combination ,
+                                   :diabetes_medication_combination ,
+                                   :high_blood_pressure_medication_combination ,
+                                   :hormone_replacement_combination ,
+                                   :mental_illness_medication_combination ,
+                                   :oral_contraceptive_medication_combination ,
+                                   :oral_steroid_medication_combination ;
+            pcdo:comes_in :extended_tablet ,
+                          :liquid ,
+                          :tablet ;
+            pcdo:discouraged_for :people_who_had_a_coma ,
+                                 :people_who_had_a_stroke ,
+                                 :people_with_diabetic_ketoacodosis ,
+                                 :people_with_heart_attack ,
+                                 :people_with_heart_disease ,
+                                 :people_with_kidney_disease ,
+                                 :people_with_liver_disease ;
+            pcdo:has_special_instructions :do_not_chew ,
+                                          :do_not_crush ,
+                                          :do_not_split ,
+                                          :follow_dietary_recommendation ,
+                                          :follow_exercise_recommendation ,
+                                          :monitor_your_blood_sugar_carefully ,
+                                          :take_dose_if_you_forgotten_the_dose ,
+                                          :take_whole ;
+            pcdo:may_cause :cautionary_reaction_metformin ,
+                           :overdose_reaction_metformin ,
+                           :serious_reaction_metformin ;
+            pcdo:treats :type_2_diabetes .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#abnormal_heartbeat
+:abnormal_heartbeat rdf:type owl:NamedIndividual ,
+                             pcdo:Abnormal_Heartbeat ;
+                    pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#alcohol
+:alcohol rdf:type owl:NamedIndividual ,
+                  pcdo:Food .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#asthma_medication_combination
+:asthma_medication_combination rdf:type owl:NamedIndividual ,
+                                        pcdo:Drug-Drug_Combination .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#beta_blocker_medication_combination
+:beta_blocker_medication_combination rdf:type owl:NamedIndividual ,
+                                              pcdo:Beta-Blockers_Combination .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#bloating
+:bloating rdf:type owl:NamedIndividual ,
+                   pcdo:Bloating .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#calcium_channel_blocker_combination
+:calcium_channel_blocker_combination rdf:type owl:NamedIndividual ,
+                                              pcdo:Calcium_Channel_Blocker_Combination .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_poison_control_for_overdose
+:call_poison_control_for_overdose rdf:type owl:NamedIndividual ,
+                                           pcdo:Call_Poison_Control_Helpline .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#call_your_doctor_for_serious_reaction
+:call_your_doctor_for_serious_reaction rdf:type owl:NamedIndividual ,
+                                                pcdo:Emergency_Action .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#cautionary_reaction_metformin
+:cautionary_reaction_metformin rdf:type owl:NamedIndividual ,
+                                        pcdo:Cautionary_Reaction ;
+                               pcdo:has_signs :bloating ,
+                                              :constipation ,
+                                              :diarrhea ,
+                                              :flushing_of_the_skin ,
+                                              :gas ,
+                                              :headache ,
+                                              :heartburn ,
+                                              :indigestion ,
+                                              :muscle_pain ,
+                                              :nail_changes ,
+                                              :stomach_pain ,
+                                              :unpleasant_metallic_taste .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#chest_pain
+:chest_pain rdf:type owl:NamedIndividual ,
+                     pcdo:Chest_Pain ;
+            pcdo:need_to_take_action :call_your_doctor_for_serious_reaction .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#cold_medication_combination
+:cold_medication_combination rdf:type owl:NamedIndividual ,
+                                      <https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Cold_Medication_Combination> .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#constipation
+:constipation rdf:type owl:NamedIndividual ,
+                       pcdo:Constipation .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#controls_blood_sugar
+:controls_blood_sugar rdf:type owl:NamedIndividual ,
+                               pcdo:Drug_Effect_Outcome .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#decreased_appetite
+:decreased_appetite rdf:type owl:NamedIndividual ,
+                             pcdo:Decreased_Appetite ;
+                    pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#decreasing_glucose_amount
+:decreasing_glucose_amount rdf:type owl:NamedIndividual ,
+                                    <https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Decrease_Glucose_Amount> ;
+                           pcdo:produces :controls_blood_sugar .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#deep_rapid_breathing
+:deep_rapid_breathing rdf:type owl:NamedIndividual ,
+                               pcdo:Labored_Breathing ;
+                      pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#diabetes_medication_combination
+:diabetes_medication_combination rdf:type owl:NamedIndividual ,
+                                          <https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Diabetes_Medication_Combination> .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#diarrhea
+:diarrhea rdf:type owl:NamedIndividual ,
+                   pcdo:Diarrhea .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#discomfort
+:discomfort rdf:type owl:NamedIndividual ,
+                     pcdo:Discomfort_Feeling ;
+            pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#dizziness
+:dizziness rdf:type owl:NamedIndividual ,
+                    pcdo:Dizziness ;
+           pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_chew
+:do_not_chew rdf:type owl:NamedIndividual ,
+                      pcdo:Do_Not_Chew .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_crush
+:do_not_crush rdf:type owl:NamedIndividual ,
+                       pcdo:Do_Not_Crush .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#do_not_split
+:do_not_split rdf:type owl:NamedIndividual ,
+                       <https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Do_Not_Split> .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#extended_tablet
+:extended_tablet rdf:type owl:NamedIndividual ,
+                          pcdo:Tablet ;
+                 pcdo:delivered_by :oral_method_with_extended_release_tablet ;
+                 pcdo:taken_in_the_form :once_a_day_extended_tablet .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#extreme_tiredness
+:extreme_tiredness rdf:type owl:NamedIndividual ,
+                            pcdo:Extreme_Tiredness ;
+                   pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#feeling_cold
+:feeling_cold rdf:type owl:NamedIndividual ,
+                       pcdo:Cold_Feeling ;
+              pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#flushing_of_the_skin
+:flushing_of_the_skin rdf:type owl:NamedIndividual ,
+                               pcdo:Flushing .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#flushing_of_the_skin_from_overdose
+:flushing_of_the_skin_from_overdose rdf:type owl:NamedIndividual ,
+                                             pcdo:Flushing ;
+                                    pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#follow_dietary_recommendation
+:follow_dietary_recommendation rdf:type owl:NamedIndividual ,
+                                        <https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Dietary_Instructions> .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#follow_exercise_recommendation
+:follow_exercise_recommendation rdf:type owl:NamedIndividual ,
+                                         <https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Special_Physical_Instructions> .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#gas
+:gas rdf:type owl:NamedIndividual ,
+              pcdo:Gas .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#headache
+:headache rdf:type owl:NamedIndividual ,
+                   pcdo:Headache .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#heartburn
+:heartburn rdf:type owl:NamedIndividual ,
+                    pcdo:Heartburn .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#high_blood_pressure_medication_combination
+:high_blood_pressure_medication_combination rdf:type owl:NamedIndividual ,
+                                                     pcdo:Blood_Pressure_Medications_Combination .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#hormone_replacement_combination
+:hormone_replacement_combination rdf:type owl:NamedIndividual ,
+                                          <https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Hormone_Drug_Combination> .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#indigestion
+:indigestion rdf:type owl:NamedIndividual ,
+                      pcdo:Indigestion .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#lightheadedness
+:lightheadedness rdf:type owl:NamedIndividual ,
+                          pcdo:Lightheadedness ;
+                 pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#liquid
+:liquid rdf:type owl:NamedIndividual ,
+                 pcdo:Liquid_Solution ;
+        pcdo:delivered_by :oral_method_by_liquid ;
+        pcdo:taken_in_the_form :once_a_day_of_liquid .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#mental_illness_medication_combination
+:mental_illness_medication_combination rdf:type owl:NamedIndividual ,
+                                                pcdo:Antipsychotic_Drug_Combination .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#monitor_your_blood_sugar_carefully
+:monitor_your_blood_sugar_carefully rdf:type owl:NamedIndividual ,
+                                             pcdo:Active_Action .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#muscle_pain
+:muscle_pain rdf:type owl:NamedIndividual ,
+                      pcdo:Muscle_Pain .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#muscle_pain_from_overdose
+:muscle_pain_from_overdose rdf:type owl:NamedIndividual ,
+                                    pcdo:Muscle_Pain ;
+                           pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#nail_changes
+:nail_changes rdf:type owl:NamedIndividual ,
+                       pcdo:Skin_Symptom .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#nausea
+:nausea rdf:type owl:NamedIndividual ,
+                 pcdo:Nausea ;
+        pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_extended_tablet
+:once_a_day_extended_tablet rdf:type owl:NamedIndividual ,
+                                     <https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series> .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#once_a_day_of_liquid
+:once_a_day_of_liquid rdf:type owl:NamedIndividual ,
+                               <https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Once_a_Day_Dosage_Series> .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_contraceptive_medication_combination
+:oral_contraceptive_medication_combination rdf:type owl:NamedIndividual ,
+                                                    pcdo:Oral_Contraceptives_Combination .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_by_liquid
+:oral_method_by_liquid rdf:type owl:NamedIndividual ,
+                                pcdo:Oral_Method .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_by_tablet
+:oral_method_by_tablet rdf:type owl:NamedIndividual ,
+                                pcdo:Oral_Method .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_method_with_extended_release_tablet
+:oral_method_with_extended_release_tablet rdf:type owl:NamedIndividual ,
+                                                   pcdo:Oral_Method .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#oral_steroid_medication_combination
+:oral_steroid_medication_combination rdf:type owl:NamedIndividual ,
+                                              <https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Sterioid_Medication_Combination> .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#overdose_reaction_metformin
+:overdose_reaction_metformin rdf:type owl:NamedIndividual ,
+                                      pcdo:Drug_Overdose_Reaction ;
+                             pcdo:has_signs :abnormal_heartbeat ,
+                                            :decreased_appetite ,
+                                            :deep_rapid_breathing ,
+                                            :discomfort ,
+                                            :dizziness ,
+                                            :extreme_tiredness ,
+                                            :feeling_cold ,
+                                            :flushing_of_the_skin_from_overdose ,
+                                            :lightheadedness ,
+                                            :muscle_pain_from_overdose ,
+                                            :nausea ,
+                                            :shortness_of_breath ,
+                                            :stomach_pain_from_overdose ,
+                                            :vomitting ,
+                                            :weakness .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_who_had_a_coma
+:people_who_had_a_coma rdf:type owl:NamedIndividual ,
+                                pcdo:People_with_Condition .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_who_had_a_stroke
+:people_who_had_a_stroke rdf:type owl:NamedIndividual ,
+                                  pcdo:People_with_Disease_Condition .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_diabetic_ketoacodosis
+:people_with_diabetic_ketoacodosis rdf:type owl:NamedIndividual ,
+                                            pcdo:People_with_Disease_Condition .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_heart_attack
+:people_with_heart_attack rdf:type owl:NamedIndividual ,
+                                   pcdo:Patients_with_Severe_Heart_Disease .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_heart_disease
+:people_with_heart_disease rdf:type owl:NamedIndividual ,
+                                    pcdo:Patients_with_Heart_Disease .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_kidney_disease
+:people_with_kidney_disease rdf:type owl:NamedIndividual ,
+                                     pcdo:Patients_with_Kidney_Disease .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#people_with_liver_disease
+:people_with_liver_disease rdf:type owl:NamedIndividual ,
+                                    pcdo:Patients_with_Liver_Disease .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#rash
+:rash rdf:type owl:NamedIndividual ,
+               pcdo:Skin_Rash ;
+      pcdo:need_to_take_action :call_your_doctor_for_serious_reaction .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#serious_reaction_metformin
+:serious_reaction_metformin rdf:type owl:NamedIndividual ,
+                                     pcdo:Serious_Reaction ;
+                            pcdo:has_signs :chest_pain ,
+                                           :rash .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#shortness_of_breath
+:shortness_of_breath rdf:type owl:NamedIndividual ,
+                              pcdo:Shortness_of_Breath ;
+                     pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#stomach_pain
+:stomach_pain rdf:type owl:NamedIndividual ,
+                       pcdo:Stomach_Pain .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#stomach_pain_from_overdose
+:stomach_pain_from_overdose rdf:type owl:NamedIndividual ,
+                                     pcdo:Stomach_Pain ;
+                            pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#tablet
+:tablet rdf:type owl:NamedIndividual ,
+                 pcdo:Tablet ;
+        pcdo:delivered_by :oral_method_by_tablet ;
+        pcdo:taken_in_the_form :twice_a_day_tablet .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#take_dose_if_you_forgotten_the_dose
+:take_dose_if_you_forgotten_the_dose rdf:type owl:NamedIndividual ,
+                                              pcdo:Make-up_Dosage .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#take_whole
+:take_whole rdf:type owl:NamedIndividual ,
+                     <https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Take_Whole> .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#twice_a_day_tablet
+:twice_a_day_tablet rdf:type owl:NamedIndividual ,
+                             <https://raw.githubusercontent.com/UTHealth-Ontology/PcDO/main/pcdo.owl#Twice_a_Day_Dosage_Series> .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#type_2_diabetes
+:type_2_diabetes rdf:type owl:NamedIndividual ,
+                          pcdo:Diabetes_mellitus_Type_2 .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#unpleasant_metallic_taste
+:unpleasant_metallic_taste rdf:type owl:NamedIndividual ,
+                                    pcdo:Metallic_Taste_in_Mouth .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#vomitting
+:vomitting rdf:type owl:NamedIndividual ,
+                    pcdo:Vomitting ;
+           pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  http://sbmi.uth.edu/ontology/pcdo/metformin.owl#weakness
+:weakness rdf:type owl:NamedIndividual ,
+                   pcdo:Unusual_Weakness ;
+          pcdo:need_to_take_action :call_poison_control_for_overdose .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
