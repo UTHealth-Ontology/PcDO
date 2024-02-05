@@ -3074,6 +3074,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Fortamet">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/541766</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3098,6 +3099,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Glucophage">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/151827</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3106,6 +3108,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Glucophage_XR">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/860977</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3114,6 +3117,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Glumetza">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/645109</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3530,6 +3534,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Katerzia">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/2184121</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3592,6 +3597,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Levo-T">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/217996</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3600,6 +3606,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Levothroid">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/10582</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3608,6 +3615,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Levoxyl">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/218002</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3632,6 +3640,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Lipitor">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/153165</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3945,6 +3954,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Norvasc">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/58927</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4558,6 +4568,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Prinivil">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/203644</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4643,6 +4654,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Qbrelis">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/1806885</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -4837,6 +4849,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Riomet">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/405304</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5518,6 +5531,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Synthroid">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/224920</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5654,6 +5668,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Tirosint">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/728656</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5748,6 +5763,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Unithroid">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/284910</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6008,6 +6024,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Zestril">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Tradename"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/196472</rdfs:seeAlso>
     </owl:Class>
     
 
