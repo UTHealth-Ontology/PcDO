@@ -3664,15 +3664,6 @@ Dosage-&gt;Dosage</rdfs:comment>
     
 
 
-    <!-- http://sbmi.uth.edu/ontology/pcdo#Liver_System -->
-
-    <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Liver_System">
-        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Body_System"/>
-        <skos:note>is liver a type of &quot;body system&quot;</skos:note>
-    </owl:Class>
-    
-
-
     <!-- http://sbmi.uth.edu/ontology/pcdo#Long-term_Cause -->
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#Long-term_Cause">
