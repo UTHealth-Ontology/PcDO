@@ -6039,6 +6039,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#amlodipine">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/17767</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6047,6 +6048,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#atorvastatin">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/83367</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6055,6 +6057,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#carbamazepine">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Seizure_Drug"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/2002</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6071,6 +6074,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#levothyroxine">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/10582</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6087,6 +6091,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#metformin">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/6809</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6095,6 +6100,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#phenobarbital">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Seizure_Drug"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/8134</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6103,6 +6109,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#phenytoin">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Seizure_Drug"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/RXNORM/8183</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -6119,6 +6126,7 @@ Dosage-&gt;Dosage</rdfs:comment>
 
     <owl:Class rdf:about="http://sbmi.uth.edu/ontology/pcdo#statin">
         <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontology/pcdo#Drug"/>
+        <rdfs:seeAlso>http://purl.obolibrary.org/obo/CHEBI_87631</rdfs:seeAlso>
     </owl:Class>
     
 
